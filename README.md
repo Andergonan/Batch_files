@@ -1,6 +1,8 @@
 # GodTerminal
 for fun and a simple life
 
+![gt.png](https://github.com/Andergonan/GodTerminal/blob/main/gt.png)
+
 ## GT přináší rychlou základní správu PC.
 
 **Hlaví menu**
