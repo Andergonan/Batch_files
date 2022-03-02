@@ -25,6 +25,6 @@ for fun and a simple life
 >  - zobrazení vašeho hostname
 >  - spuštění terminálu
 
-**ostatní funkce**
+**Ostatní funkce**
 > - Můžete v hlavím menu spustit log a podívat se na veškeré aktivity, které byly provedeny GT
 > - Program si můžete jednoduše přizpůsobit svým potřebám přepsání zdrojového kódu
