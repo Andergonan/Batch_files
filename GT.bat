@@ -16,7 +16,6 @@ color 0B
 echo Username
 echo.
 set /p user_name=GT: 
-echo © David Anderle | MIT license
 if %user_name% == admin goto login_password
 echo %date% / %time% / %user_name% >> Log_wrong_login.txt
 goto wrong_username
