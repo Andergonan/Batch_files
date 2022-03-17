@@ -13,6 +13,8 @@ rem login
 cls
 title GT: Login
 color 0B
+echo - David Anderle - MIT license
+echo.
 echo Username
 echo.
 set /p user_name=GT: 
