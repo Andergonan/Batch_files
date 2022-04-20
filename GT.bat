@@ -1,9 +1,8 @@
 @echo off
 rem -------------------------------------------------------------------------
-rem v 0.0.4                                                                 \
 rem Author: David Anderle                                                   \
 rem Github: https://github.com/Andergonan/                                  \
-rem LICENSE: https://github.com/Andergonan/Batch_files/blob/main/LICENSE    \
+rem LICENSE: https://github.com/Andergonan/GodTerminal   \
 rem Program name: GodTerminal                                               \
 rem File name: GT.bat                                                       \
 rem -------------------------------------------------------------------------
@@ -13,8 +12,6 @@ rem login
 cls
 title GT: Login
 color 0B
-echo - David Anderle - MIT license
-echo.
 echo Username
 echo.
 set /p user_name=GT: 
@@ -136,7 +133,7 @@ ping -n 1 localhost >nul
 echo MMMMMMMMMMMMMMMMMNNNmmdhhhyyyyhhddmmmNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 ping -n 1 localhost >nul
 echo MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-ping -n 1 localhost >nul
+ping -n 1 localhost >nul                                                                   version: 0.0.4
 echo.
 echo                                            -Hlavni menu-
 echo.
@@ -245,9 +242,10 @@ title GT: network_settings
 cls
 color 0B
 echo - Nacist nastveni routeru [routset]
-echo - ipconfig [ip]
-echo - hostname [hname]
+echo - Ipconfig [ip]
+echo - Hostname [hname]
 echo - Terminal [wcmd]
+echo - Zobrazit hesla ulozenych siti [showme]
 echo.
 echo                                                               - Zpet do hlavni nabidky [m]
 set /p select_network_setting=/
@@ -255,6 +253,7 @@ if %select_network_setting% == routset goto router_setting
 if %select_network_setting% == ip goto ip_ipconfig
 if %select_network_setting% == hname goto hname_hostname
 if %select_network_setting% == wcmd goto start_cmd
+if %select_network_setting% == showme goto start_netprofiles
 if %select_network_setting% == m goto main_menu
 goto network_settings
 
@@ -313,6 +312,29 @@ title GT: Command_hostname
 color 0A
 hostname
 echo %date% / %time% / %user_name% / hostname [Used]>> GT_Log.txt
+echo.
+echo.
+echo --------------------------------------------------------------------------------------------------
+ping -n 1 localhost >nul
+echo                                                               - Zpet k nastaveni site [n]
+ping -n 1 localhost >nul
+echo                                                               - Zpet do hlavni nabidky [m]
+ping -n 1 localhost >nul
+set /p select=GT: 
+if %select% == n goto network_settings
+if %select% == m goto main_menu
+goto network_settings
+
+rem network_settings: vyber [showme] - nacteni prikazu "netsh"
+:start_netprofiles
+cls
+title GT: Networks profiles
+color 0A
+echo %date% / %time% / %user_name% / Netsh [Used]>> GT_Log.txt
+netsh wlan show profile
+echo.
+set /p key=Nazev site: 
+netsh wlan show profile %key% key=clear
 echo.
 echo.
 echo --------------------------------------------------------------------------------------------------
