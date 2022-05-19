@@ -27,7 +27,7 @@ for fun and a simple life
 > - Zobrazení hesel uložených sítí
 
 **Ostatní funkce**
-> - Můžete v hlavím menu spustit log a podívat se na veškeré aktivity, které byly provedeny GT
+> - Můžete v hlavím menu spustit log a podívat se na veškeré aktivity, které byly provedeny GT (soubory s logy se ukládají do adresáře, kde je GT uložen)
 > - Program si můžete jednoduše přizpůsobit svým potřebám přepsáním zdrojového kódu
 
 ![gt.png](https://github.com/Andergonan/GodTerminal/blob/main/gt.png)
