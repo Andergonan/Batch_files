@@ -22,8 +22,9 @@ for fun and a simple life
 *(lze přes menu spravovat síť)*
 > - Nastavení routeru
 >  - Spuštění příkazu /ipconfig
->  - zobrazení vašeho hostname
->  - spuštění terminálu
+>  - Zobrazení vašeho hostname
+>  - Spuštění terminálu
+> - Zobrazení hesel uložených sítí
 
 **Ostatní funkce**
 > - Můžete v hlavím menu spustit log a podívat se na veškeré aktivity, které byly provedeny GT
