@@ -2,7 +2,7 @@
 rem -------------------------------------------------------------------------
 rem Author: David Anderle                                                   \
 rem Github: https://github.com/Andergonan/                                  \
-rem LICENSE: https://github.com/Andergonan/GodTerminal/blob/main/LICENSE    \
+rem LICENSE: https://github.com/Andergonan/GodTerminal   \
 rem Program name: GodTerminal                                               \
 rem File name: GT.bat                                                       \
 rem -------------------------------------------------------------------------
