@@ -1,7 +1,7 @@
 # GodTerminal
 for fun and a simple life
 
-## GT přináší rychlou základní správu PC.
+## GT přináší rychlou základní správu PC v textovém prostředí.
 
 **Hlaví menu**
 *(rychlé spuštění aplikací)*
